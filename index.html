@@ -1,0 +1,17 @@
+<html>
+<body>
+
+    <h2>Welcome to Visual Calls</h2>
+
+<p>Following will take you to an external trusted page</p>
+<br/>
+<p id="demo"></p>
+    
+<script type="text/javascript">
+let txt = window.location.pathname + window.location.search;
+let idx = txt.indexOf("visitor");
+txt = 'https://vi-activeshare-staging.app.247-inc.net/' + txt.substring(idx);
+    document.getElementById("demo").innerHTML = "<a href='"+txt+"'> Tap here to continue </a>"
+</script>
+</body>
+</html>
